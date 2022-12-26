@@ -1,3 +1,9 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .video-container {
   position: relative;
   overflow: hidden;
@@ -5,6 +11,10 @@
   box-shadow: 0px 0px 8px #888888;
   padding-top: 56.25%;
   cursor: pointer !important;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
 }
 .responsive-video-iframe {
   position: absolute;
@@ -16,57 +26,44 @@
   height: 100%;
 }
 .other-videos {
-  padding-left: 1%;
+  margin-top: 2%;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  width: 22%;
+  flex-direction: row;
+  width: 100%;
 }
 .other-videos div {
   background-position: center;
   background-position: no-repeat;
   background-size: cover;
   padding-top: 18%;
-  margin: 0 5px;
-  padding-top: 56.25%;
-  width: 100%;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.flex {
-  display: flex;
-  flex-direction: row;
+  width: 32%;
 }
 .main-section {
-  padding-right: 1%;
-  width: 78%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
   .flex {
-    flex-direction: column;
+    flex-direction: row;
   }
   .main-section {
     width: 100%;
     padding: 0;
   }
   .other-videos {
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 32%;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
   }
   .other-videos div{
-    padding-top: 18%;
+    padding-top: 56.25%;
     margin: 0;
-    width: 32%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
